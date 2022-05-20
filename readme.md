@@ -16,4 +16,3 @@
 - Clicked on ```settings``` > ```asterisk sip settings``` ,then click on ```detect network settings under NAT settings``` then click ```submit``` and ```apply config```.
 - Then click ```admin``` >```asterisk CLI```and a form appeared where we ```entered core restart now``` as a command and clicked on the ```send``` button. Wait for 10-20 minutes for it to execute the command and refresh the page.
 - Then we did a test call and the audio worked.
-
