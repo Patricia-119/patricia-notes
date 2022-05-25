@@ -52,7 +52,7 @@ After this is done and you have signedin in the AWS console in a specified or an
 ```print(subnet.id)```                  
                  
 ```route_table.associate_with_subnet(SubnetId=subnet.id)```
-### CREATING A SECURITY GROUPS
+### CREATING  SECURITY GROUPS
 You can have a security group variable for storing the group id and a security group for use in a VPC and for attaching the ingresss with the same variable name and also give it the cidrip that is all open(0.0.0.0/0) or asigned to all zeros and internet protocol  to be used, you can't have two security groups for use in EC2-instance with the same name or two security groups for use in a VPC with the same name.
 
  **NOTE**
@@ -98,8 +98,8 @@ Create the varible that is going to store the private key in a file and in the p
 ```)```
 
 ```print("Key Pair PBXAccessKey.pem successfully created")```
-### DEPLOYING THE PRIVATE BRANCE EXCHANGE (PBX) INTO THE EC2 INSTANCE
-To deploy free pbx into an instance go to the marketpalce in the aws console and search for free pbx then go on community free pbxs and  select or copy any iam image id for the free pbx. After this is done create a variable that will store an instance and assign it to the aws resource to create an insatnce in the parenthesis pass image id of the free pbx, the instance type it contains or any other, the key name , maxcount and mincount to have values of one because an instance should be created once.
+### LAUNCHING AN EC2 INSTANCE
+To deploy free pbx into an instance go to the marketpalce in the aws console and search for free pbx then go on community free pbxs and  select or copy any ami image id for the free pbx. After this is done create a variable that will store an instance and assign it to the aws resource to create an insatnce in the parenthesis pass image id of the free pbx, the instance type it contains or any other, the key name , maxcount and mincount to have values of one because an instance should be created once.
 
 ```inst = res.create_instances(ImageId = 'ami-082cf60e3c339f4eb',```
         ```InstanceType ='t3.micro',```
