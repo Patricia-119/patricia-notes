@@ -1,5 +1,4 @@
 # DEPLOYING FREEPBX MANUALLY
-
 - Login to aws console
 - Then click on aws market to select a FREEPBX 
 - After selecting the ```freepbx ami```, click on launch instance.
